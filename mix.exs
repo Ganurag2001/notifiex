@@ -29,7 +29,11 @@ defmodule Notifiex.MixProject do
       {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:httpoison, "~> 1.8"},
-      {:poison, "~> 5.0"}
+      {:poison, "~> 5.0"},
+      {:ex_gram, git: "https://github.com/rockneurotiko/ex_gram"},
+      # {:tesla, "~> 1.4"},
+      {:tesla, git: "https://github.com/teamon/tesla", override: true},
+      {:jason, "~> 1.2"}
     ]
   end
 
